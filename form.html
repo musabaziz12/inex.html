@@ -36,7 +36,7 @@
             <form action="http://www.example.com/profile.php">
                 <p>Please select your favorite Course:
                     <br />
-                    <input type="radio" name="genre" value="rock" checked="checked" /> CCS
+                    <input type="radio" name="genre" value="rock" required /> CCS
                     <input type="radio" name="genre" value="pop" />
                     Graphic Designing
                     <input type="radio" name="genre" value="jazz" />
@@ -45,7 +45,7 @@
             </form>
             <form action="https://www.example.com/salection ">
                 <p>When can you take classes?</p>
-                <select name="devices">
+                <select name="devices"required>
                     <option value="9am-3pm">9am-3pm</option>
                     <option value="4pm-7pm">4pm-7pm</option>
                     <option value="7pm-10pm">7pm-10pm</option>
@@ -55,31 +55,31 @@
             <form action="https://www.example.com/salection ">
                 <p>What day can you take the class??</p>
                 <select name="devices">
-                    <option value="MONDAY">MONDAY</option>
-                    <option value="WEDNESDAY">WEDNESDAY</option>
-                    <option value="SATURDAY">SATURDAY</option>
+                    <option value="MONDAY"required>MONDAY</option>
+                    <option value="WEDNESDAY"required>WEDNESDAY</option>
+                    <option value="SATURDAY"required>SATURDAY</option>
                 </select>
             </form>
-            <label>Age: <input type="number" name="age"></label>
+            <label>Age: <input type="number" name="age"checked></label>
             Gender:
-            <input id="female" type="radio" name="gender" value="f">
+            <input id="female" type="radio" name="gender" value="f"checked>
             <label for="female">female</label>
-            <input id="male" type="radio" name="gender" value="m">
-            <label for="male">male</label>
+            <input id="male" type="radio" name="gender" value="m"checked>
+            <label for="male"checked>male</label>
 
 <fieldset>
 <legend>Cntect details</legend>
 <label>Mobile:<br />
-<input type="number" name="mobile" /></label><br />
+<input type="number" name="mobile" checked /></label><br />
 <label >Telephone:</label>
-<input type="number" name="Telephone" /></label>
+<input type="number" name="Telephone"checked /></label>
 </fieldset>
 <p>
-    <label for="comments">
+    <label for="comments"required>
     Comments:
     </label>
     <br />
-    <textarea rows="4" cols="40" id="comments">
+    <textarea rows="4" cols="40" id="comments"required>
     </textarea>
     </p>
    
@@ -87,7 +87,9 @@
         <br />
         <input type="file" name="your picture" size="20" maxlength=40 required>
     </p>
-    <input type="submit" name="Submit" required>
+   </a> <input type="submit" name="Submit" required a  >
+   
+    
     </form>
 
 
